@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Muzukashii — Focused Sudoku</title>
+  <meta name="description" content="A minimalist Sudoku where only one ninth of the board is visible at a time." />
+  <meta name="theme-color" content="#6c1407" />
+  <meta property="og:title" content="Muzukashii — Focused Sudoku" />
+  <meta property="og:description" content="A minimalist Sudoku where only one ninth of the board is visible at a time." />
+  <meta property="og:image" content="assets/screen-menu.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="washi" aria-hidden="true"></div>
+
+  <header class="site-nav" role="banner">
+    <a class="brand" href="#top" aria-label="Muzukashii — home">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="assets/icon.png" alt="" />
+      </span>
+      <span class="brand-text">
+        <span class="brand-text__name">Muzukashii</span>
+        <span class="brand-text__sub">F O C U S E D &nbsp;S U D O K U</span>
+      </span>
+    </a>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="eyebrow">難しい &nbsp;·&nbsp; <span>Muzukashii</span> &nbsp;·&nbsp; "difficult"</p>
+        <h1 id="hero-title" class="display">
+          Sudoku, but you<br/>
+          <em>only see</em> one<br/>
+          ninth at a time.
+        </h1>
+        <p class="lede">
+          A standard nine-by-nine board hides behind the screen. Only the
+          three-by-three you're working on is visible — the rest live in
+          your head. Swipe between boxes, or tap the mini-map to wander.
+        </p>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <div class="phone phone--menu">
+          <img src="assets/screen-menu.png" alt="" loading="eager" />
+        </div>
+        <div class="phone phone--game">
+          <img src="assets/screen-game.png" alt="" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="screens" class="screens" aria-labelledby="screens-title">
+      <div class="screens__row screens__row--quad">
+        <figure class="phone phone--lg">
+          <img src="assets/screen-splash.png" alt="Splash screen" loading="lazy" />
+        </figure>
+        <figure class="phone phone--lg">
+          <img src="assets/screen-calendar.png" alt="Daily Challenge calendar" loading="lazy" />
+        </figure>
+        <figure class="phone phone--lg">
+          <img src="assets/screen-win.png" alt="Win screen" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <section id="features" class="features" aria-labelledby="features-title">
+      <ul class="feature-grid">
+        <li class="feature">
+          <h3>Three difficulties</h3>
+          <p>Ichi, Ni, San. Pick your tier and pick up exactly where you left off.</p>
+        </li>
+        <li class="feature">
+          <h3>Daily Challenge</h3>
+          <p>One puzzle a day, the same for everyone. A calendar tracks your streak.</p>
+        </li>
+        <li class="feature">
+          <h3>Zen mode</h3>
+          <p>No timer, no record — just the board and the leaves.</p>
+        </li>
+        <li class="feature">
+          <h3>Pencil notes</h3>
+          <p>Scratch candidates into a cell; placing a digit clears its peers.</p>
+        </li>
+        <li class="feature">
+          <h3>Conflict arrows</h3>
+          <p>The board you can't see still talks back — a red arrow points to a duplicate hidden in another box.</p>
+        </li>
+        <li class="feature">
+          <h3>Koyo atmosphere</h3>
+          <p>Washi paper, Sumi ink, soft ambient music and a page-flip on every region change.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="gamecenter" class="gc" aria-labelledby="gc-title">
+      <header class="section-head section-head--center">
+        <p class="eyebrow eyebrow--primary">Game Center</p>
+        <h2 id="gc-title" class="h1">Climb the boards.<br/>Collect the marks.</h2>
+      </header>
+
+      <div class="gc__grid" style="grid-template-columns: 1fr 1fr;">
+        <article class="gc-card">
+          <p class="label">LEADERBOARDS</p>
+          <ul class="gc-list">
+            <li><b>Ichi · Ni · San</b><span>Best time per difficulty.</span></li>
+            <li><b>Daily Challenge</b><span>One puzzle a day, ranked against everyone.</span></li>
+            <li><b>All-time Points</b><span>Cumulative across every solve.</span></li>
+          </ul>
+        </article>
+
+        <article class="gc-card gc-card--accent">
+          <p class="label">ACHIEVEMENTS · 11</p>
+          <ul class="gc-list gc-list--ach">
+            <li><b>First Light</b><span>Solve your first puzzle.</span></li>
+            <li><b>Flawless</b><span>Solve without ever creating a conflict.</span></li>
+            <li><b>By Memory Alone</b><span>Solve without enabling Notes.</span></li>
+            <li><b>Streaks</b><span>Seven, thirty, one hundred days.</span></li>
+            <li><b>No Quarter</b><span>A flawless San. The hardest mark.</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="supporter" class="gc" aria-labelledby="supporter-title">
+      <div class="gc__grid">
+        <article class="gc-card gc-card--accent" style="grid-column: 1 / -1;">
+          <p class="label">♥ SUPPORTER EDITION</p>
+          <p style="margin:0 0 16px;">A single one-time tip. The app stays fully playable without it — nothing behind the gate is required to solve a puzzle.</p>
+          <ul class="gc-list">
+            <li><b>Dark mode</b><span>The same scene at dusk — Sumi surfaces, Momiji red lifted into a glow.</span></li>
+            <li><b>Alternate app icon</b><span>A second mark for the home screen.</span></li>
+            <li><b>Custom splash</b><span>A different opening frame on cold launch.</span></li>
+            <li><b>Supporter badge</b><span>A small pill on the main menu.</span></li>
+            <li><b>More to come</b><span>Future premium features — new themes, extra puzzle packs and seasonal palettes — arrive at no extra cost.</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-foot" role="contentinfo">
+    <div class="site-foot__row">
+      <p class="site-foot__brand">
+        <span aria-hidden="true">難しい</span>
+        Muzukashii — Focused Sudoku
+      </p>
+      <p class="site-foot__meta">
+        <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · © 2026
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

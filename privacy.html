@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <title>Privacy Policy — Muzukashii</title>
+
+  <meta
+    name="description"
+    content="Muzukashii Privacy Policy — what data the app handles, where it goes, and how Apple platform services are used."
+  />
+
+  <meta name="theme-color" content="#6c1407" />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+
+  <!--
+    NOTE:
+    Google Fonts make network requests to Google servers.
+    If you want your website itself to avoid third-party requests,
+    self-host the fonts instead of using the CDN below.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="legal-body">
+  <div class="washi" aria-hidden="true"></div>
+
+  <header class="site-nav" role="banner">
+    <a class="brand" href="index.html" aria-label="Muzukashii — home">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="brand-mark__grid">
+          <i></i><i></i><i></i>
+          <i></i><i class="filled"></i><i></i>
+          <i></i><i></i><i></i>
+        </span>
+      </span>
+
+      <span class="brand-text">
+        <span class="brand-text__name">Muzukashii</span>
+        <span class="brand-text__sub">
+          F O C U S E D &nbsp;S U D O K U
+        </span>
+      </span>
+    </a>
+
+    <nav class="site-nav__links" aria-label="Primary">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#screens">Screens</a>
+      <a href="index.html#gamecenter">Game Center</a>
+      <a class="nav-cta" href="index.html#download">Get notified</a>
+    </nav>
+  </header>
+
+  <main class="legal">
+    <article class="legal__doc">
+      <p class="eyebrow eyebrow--primary">Legal</p>
+
+      <h1 class="h1">Privacy Policy</h1>
+
+      <p class="legal__meta">
+        Effective date: 18 May 2026 · Applies to Muzukashii on iOS,
+        iPadOS, macOS, and visionOS.
+      </p>
+
+      <p class="lede">
+        Muzukashii ("the app") is a single-player Sudoku game developed by
+        Tamas Bereczki ("we", "us", "our").
+        <strong>
+          The app is designed so that we do not directly collect personal
+          data from users, we do not operate developer-run servers, and we
+          do not use analytics or advertising SDKs.
+        </strong>
+        This page explains the limited data the app interacts with through
+        Apple's platform services and your device.
+      </p>
+
+      <h2>1. Data stored on your device</h2>
+
+      <p>
+        The following information is stored locally in
+        <code>UserDefaults</code> on the device where you installed the app:
+      </p>
+
+      <ul>
+        <li>
+          Your casual saved game and one in-progress save per Daily Challenge
+          date (puzzle, entries, notes, selection, visible region, elapsed
+          time, Zen flag).
+        </li>
+
+        <li>
+          App settings (sound effects on/off, music on/off and volume,
+          keep-screen-awake, in-app language override, appearance —
+          System / Light / Dark).
+        </li>
+
+        <li>
+          Local statistics (total solves, best times per difficulty,
+          mistake-free count, notes-free count, region-switch totals).
+        </li>
+
+        <li>
+          All-time points (a single integer).
+        </li>
+
+        <li>
+          Run-telemetry flags (whether you ever had a conflict, ever used
+          Notes mode, region-switch count) — used solely so achievement
+          evaluation cannot be bypassed by resetting partway through a run.
+        </li>
+      </ul>
+
+      <p>
+        This data remains stored locally on your device unless you choose to
+        use the Apple integrations described below.
+      </p>
+
+      <h2>2. iCloud sync (Apple — your iCloud account)</h2>
+
+      <p>
+        If you are signed in to iCloud, the app uses Apple's
+        <code>NSUbiquitousKeyValueStore</code> to synchronize the following
+        information between your own devices:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Daily Challenge completion records</strong> — date key,
+          difficulty, completion time, Zen flag, and completion timestamp.
+          In-progress Daily saves are not synchronized and remain per-device.
+        </li>
+
+        <li>
+          <strong>App settings</strong> — the seven preferences listed in
+          Section 1.
+        </li>
+      </ul>
+
+      <p>
+        This data is stored in your private iCloud key-value container
+        associated with your Apple account. We cannot access or retrieve this
+        information. Apple may process this data according to its own privacy
+        policies and your account settings.
+      </p>
+
+      <p>
+        Apple's privacy policy:
+        <a
+          href="https://www.apple.com/legal/privacy/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          apple.com/legal/privacy
+        </a>
+      </p>
+
+      <h2>3. Game Center (Apple — your Apple ID)</h2>
+
+      <p>
+        If you choose to sign in to Game Center, the app submits the following
+        information to Apple's Game Center service:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Best completion times</strong> to up to five leaderboards —
+          Ichi, Ni, San, the rolling Daily Challenge leaderboard, and the
+          all-time Points leaderboard.
+        </li>
+
+        <li>
+          <strong>Achievement progress</strong> for the eleven in-app
+          achievements (incremental percentage for counter-based achievements,
+          or 100% upon unlock).
+        </li>
+
+        <li>
+          A 31-bit non-reversible hash of the puzzle string in the score's
+          <code>context</code> field, used solely for internal audit and
+          duplicate prevention purposes. The hash is never displayed in the
+          UI.
+        </li>
+      </ul>
+
+      <p>The app deliberately does not submit:</p>
+
+      <ul>
+        <li>
+          Zen Mode runs (no scores, achievements, or statistics are recorded).
+        </li>
+
+        <li>Incomplete runs.</li>
+
+        <li>
+          Runs outside a plausibility window — under 30 seconds for Ichi,
+          60 seconds for Ni, 90 seconds for San, or longer than seven days.
+        </li>
+
+        <li>
+          The same run more than once (deduplicated by a per-run UUID).
+        </li>
+      </ul>
+
+      <p>
+        Your Game Center display name may appear on leaderboards according to
+        your Apple account and Game Center privacy settings — see
+        <em>Settings → Game Center</em> on your device to manage visibility.
+      </p>
+
+      <p>
+        The app does not receive your Apple ID, email address, or other
+        personally identifying Game Center account information. Apple may
+        process Game Center data according to its own privacy policy.
+      </p>
+
+      <h2>4. In-App Purchases (Apple — App Store)</h2>
+
+      <p>
+        The Supporter Edition is a one-time non-consumable purchase processed
+        by Apple through StoreKit.
+      </p>
+
+      <p>
+        The app reads your entitlement status using
+        <code>Transaction.currentEntitlements</code>. We do not receive your
+        payment method, billing address, or Apple ID.
+      </p>
+
+      <p>
+        See the <a href="terms.html">Terms of Use</a> for information about
+        what the Supporter Edition unlocks.
+      </p>
+
+      <h2>5. App Store review prompt</h2>
+
+      <p>
+        After a non-Zen completion, the app may request that Apple's StoreKit
+        display the native "Rate this app" prompt.
+      </p>
+
+      <p>
+        Apple — not us — controls when and how often this prompt appears
+        (typically limited by Apple to a small number of displays per year
+        and app version). Reviews submitted through this prompt are published
+        on the App Store under the display name associated with your App
+        Store account.
+      </p>
+
+      <p>
+        We can only see reviews that are publicly visible on the App Store.
+      </p>
+
+      <h2>6. What we do not do</h2>
+
+      <ul>
+        <li>
+          No analytics SDKs, attribution SDKs, advertising SDKs, or
+          crash-reporting SDKs.
+        </li>
+
+        <li>
+          No use of the IDFA (Advertising Identifier).
+        </li>
+
+        <li>
+          No developer-operated servers, analytics services, advertising
+          services, or third-party tracking requests. Apple frameworks such
+          as Game Center, iCloud, and StoreKit may communicate with Apple's
+          services.
+        </li>
+
+        <li>
+          No tracking across other apps or websites.
+        </li>
+
+        <li>
+          No sale or sharing of personal data by us.
+        </li>
+      </ul>
+
+      <h2>7. Children</h2>
+
+      <p>
+        The app is intended for a general audience and does not knowingly
+        collect personal data from children or adults.
+      </p>
+
+      <p>
+        If you have concerns about a child's Game Center participation,
+        Apple's Family Sharing and parental control features govern those
+        settings.
+      </p>
+
+      <h2>8. Your rights</h2>
+
+      <p>
+        Because we do not store or process personal data on our own servers,
+        we generally do not have personal data to access, export, correct,
+        or delete on behalf of users.
+      </p>
+
+      <p>
+        To remove locally stored app data, you may delete the app from your
+        device. Removing the app will remove its local sandboxed storage
+        from the device.
+      </p>
+
+      <p>
+        To remove iCloud-synchronized data, you may sign out of iCloud or
+        disable Muzukashii under
+        <em>Settings → Apple ID → iCloud → Apps Using iCloud</em>.
+      </p>
+
+      <p>
+        Game Center data and leaderboard participation may be managed through
+        your Apple ID and Game Center settings.
+      </p>
+
+      <p>
+        If you are located in the EEA or UK, applicable privacy laws such as
+        the GDPR and UK GDPR may provide rights including access,
+        rectification, erasure, restriction, portability, and objection.
+        Because we do not store or process personal data on our own servers,
+        these rights are generally exercised through your device settings or
+        Apple's services. Any data processed by Apple is governed by Apple's
+        own privacy policy.
+      </p>
+
+      <h2>9. Changes</h2>
+
+      <p>
+        We may update this Privacy Policy as the app evolves. Material
+        changes will be reflected by updating the effective date at the top
+        of this page.
+      </p>
+
+      <h2>10. Governing law</h2>
+
+      <p>
+        This Privacy Policy is governed by the laws of Romania, without
+        regard to conflict of law principles.
+      </p>
+
+      <h2>11. Contact</h2>
+
+      <p>
+        Questions, requests, or anything else:
+        <a href="mailto:tamasbereczki94@gmail.com">
+          tamasbereczki94@gmail.com
+        </a>
+      </p>
+
+      <p class="legal__back">
+        <a href="index.html">← Back to Muzukashii</a>
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-foot" role="contentinfo">
+    <div class="site-foot__row">
+      <p class="site-foot__brand">
+        <span aria-hidden="true">難しい</span>
+        Muzukashii — Focused Sudoku
+      </p>
+
+      <p class="site-foot__meta">
+        <a href="privacy.html">Privacy</a>
+        ·
+        <a href="terms.html">Terms</a>
+        · © 2026
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
