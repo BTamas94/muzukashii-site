@@ -965,7 +965,9 @@ code {
   justify-content: center;
   gap: 14px;
 }
-
+.download-cta img {
+  width: 160px;
+}
 /* ── footer ──────────────────────────────────────────────── */
 .site-foot {
   border-top: 1px solid var(--outline-variant);
