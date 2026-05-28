@@ -1039,6 +1039,29 @@ code {
   .brand-text__sub { display: none; }
   .phone--menu { width: 150px; right: 38%; }
   .phone--game { width: 175px; right: 0%; }
+  .eyebrow { width: 210px; display: block; }
+  .download-cta { text-align: center; }
+  .download-cta a { display: inline-block; }
+  .screens__row {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    gap: 12px;
+  }
+  .screens__row figure {
+    flex: 0 0 85% !important;
+    scroll-snap-align: center;
+    overflow: visible;
+  }
+  .screens__row img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Respect users that prefer reduced motion */
